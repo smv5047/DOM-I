@@ -58,6 +58,25 @@ navLinks[2].textContent = "Vision";
 navLinks[3].textContent = "Features";
 navLinks[4].textContent = "About";
 navLinks[5].textContent = "Contact";
+navLinks.forEach(function(element) {
+  element.style.color = "green"
+})
+
+let sampleNav1 = document.createElement('a')
+sampleNav1.textContent = "Sample Nav 1"
+sampleNav1.style.color = "green"
+
+let sampleNav2 = document.createElement('a')
+sampleNav2.textContent = "Sample Nav 2"
+sampleNav2.style.color = "green"
+
+let nav =document.querySelector('nav')
+nav.appendChild(sampleNav1);
+nav.prepend(sampleNav2);
+
+navLinks.forEach(function(element) {
+  element.style.color = "green"
+})
 
 //Header Section
 
@@ -101,14 +120,3 @@ contactInfo[2].textContent = "sales@greatidea.io"
 
 let footer = document.querySelector("footer p")
 footer.textContent = "Copyright Great Idea! 2018"
-
-
-
-// "contact": {
-//   "contact-h4" : "Contact",
-//   "address" : "123 Way 456 Street Somewhere, USA",
-//   "phone" : "1 (888) 888-8888",
-//   "email" : "sales@greatidea.io",
-// },
-// "footer": {
-//   "copyright" : "Copyright Great Idea! 2018"

@@ -41,13 +41,13 @@ const siteContent = {
 
 //Img selectors and attribute updates
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', '/img/logo.png')
+logo.setAttribute('src', './img/logo.png')
 
 let cta = document.querySelector('#cta-img');
-cta.setAttribute('src', '/img/header-img.png')
+cta.setAttribute('src', './img/header-img.png')
 
 let midImage = document.querySelector('#middle-img')
-midImage.setAttribute('src', 'img/mid-page-accent.jpg')
+midImage.setAttribute('src', './img/mid-page-accent.jpg')
 
 //Nav Bar
 

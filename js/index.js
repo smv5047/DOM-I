@@ -81,7 +81,7 @@ navLinks.forEach(function(element) {
 //Header Section
 
 let title = document.querySelector('.cta-text h1')
-title.textContent = 'Dom Is Awesome';
+title.innerHTML = 'Dom <br/>Is<br/> Awesome';
 title.setAttribute('text-align', 'center')
 
 let button = document.querySelector('button')
@@ -118,7 +118,7 @@ let contact = document.querySelector('.contact h4')
 contact.textContent = 'CONTACT'
 
 let contactInfo = document.querySelectorAll('.contact p')
-contactInfo[0].textContent = "123 Way 456 Street Somewhere, USA"
+contactInfo[0].innerHTML= "123 Way 456 Street <br/> Somewhere, USA"
 contactInfo[1].textContent = "1 (888) 888-8888"
 contactInfo[2].textContent = "sales@greatidea.io"
 

@@ -87,6 +87,12 @@ title.setAttribute('text-align', 'center')
 let button = document.querySelector('button')
 button.textContent = 'Get Started';
 
+button.addEventListener('click', () => {
+  console.log('Clicked the Button')
+  button.style.color= 'red'
+  event.stopPropagation();
+});
+
 //Content
 
 

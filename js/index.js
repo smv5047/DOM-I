@@ -38,6 +38,8 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//Img selectors and attribute updates
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', '/img/logo.png')
 
@@ -47,3 +49,14 @@ cta.setAttribute('src', '/img/header-img.png')
 let midImage = document.querySelector('#middle-img')
 midImage.setAttribute('src', 'img/mid-page-accent.jpg')
 
+//Nav Bar
+
+let navLinks = document.querySelectorAll('nav a')
+navLinks[0].textContent = "Services";
+navLinks[1].textContent = "Product";
+navLinks[2].textContent = "Vision";
+navLinks[3].textContent = "Features";
+navLinks[4].textContent = "About";
+navLinks[5].textContent = "Contact";
+
+//

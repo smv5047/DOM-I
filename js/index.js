@@ -59,4 +59,56 @@ navLinks[3].textContent = "Features";
 navLinks[4].textContent = "About";
 navLinks[5].textContent = "Contact";
 
-//
+//Header Section
+
+let title = document.querySelector('.cta-text h1')
+title.textContent = 'Dom Is Awesome';
+title.setAttribute('text-align', 'center')
+
+let button = document.querySelector('button')
+button.textContent = 'Get Started';
+
+//Content
+
+
+let topHeader = document.querySelectorAll('.text-content h4')
+topHeader[0].textContent = 'FEATURES';
+topHeader[1].textContent = 'ABOUT';
+topHeader[2].textContent = 'SERVICES';
+topHeader[3].textContent = 'PRODUCT';
+topHeader[4].textContent = 'VISION';
+
+
+let topParagraph = document.querySelectorAll('.text-content p')
+topParagraph[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+topParagraph[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+topParagraph[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+topParagraph[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+topParagraph[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+
+//Contact
+
+let contact = document.querySelector('.contact h4')
+contact.textContent = 'CONTACT'
+
+let contactInfo = document.querySelectorAll('.contact p')
+contactInfo[0].textContent = "123 Way 456 Street Somewhere, USA"
+contactInfo[1].textContent = "1 (888) 888-8888"
+contactInfo[2].textContent = "sales@greatidea.io"
+
+//Footer
+
+let footer = document.querySelector("footer p")
+footer.textContent = "Copyright Great Idea! 2018"
+
+
+
+// "contact": {
+//   "contact-h4" : "Contact",
+//   "address" : "123 Way 456 Street Somewhere, USA",
+//   "phone" : "1 (888) 888-8888",
+//   "email" : "sales@greatidea.io",
+// },
+// "footer": {
+//   "copyright" : "Copyright Great Idea! 2018"

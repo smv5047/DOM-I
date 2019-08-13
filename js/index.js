@@ -38,5 +38,91 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//Img selectors and attribute updates
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', './img/logo.png')
+
+let cta = document.querySelector('#cta-img');
+cta.setAttribute('src', './img/header-img.png')
+
+let midImage = document.querySelector('#middle-img')
+midImage.setAttribute('src', './img/mid-page-accent.jpg')
+
+//Nav Bar
+
+let navLinks = document.querySelectorAll('nav a')
+navLinks[0].textContent = "Services";
+navLinks[1].textContent = "Product";
+navLinks[2].textContent = "Vision";
+navLinks[3].textContent = "Features";
+navLinks[4].textContent = "About";
+navLinks[5].textContent = "Contact";
+navLinks.forEach(function(element) {
+  element.style.color = "green"
+})
+
+let sampleNav1 = document.createElement('a')
+sampleNav1.textContent = "Sample Nav 1"
+sampleNav1.style.color = "green"
+
+let sampleNav2 = document.createElement('a')
+sampleNav2.textContent = "Sample Nav 2"
+sampleNav2.style.color = "green"
+
+let nav =document.querySelector('nav')
+nav.appendChild(sampleNav1);
+nav.prepend(sampleNav2);
+
+navLinks.forEach(function(element) {
+  element.style.color = "green"
+})
+
+//Header Section
+
+let title = document.querySelector('.cta-text h1')
+title.innerHTML = 'Dom <br/>Is<br/> Awesome';
+title.setAttribute('text-align', 'center')
+
+let button = document.querySelector('button')
+button.textContent = 'Get Started';
+
+button.addEventListener('click', () => {
+  console.log('Clicked the Button')
+  button.style.color= 'red'
+  event.stopPropagation();
+});
+
+//Content
+
+
+let topHeader = document.querySelectorAll('.text-content h4')
+topHeader[0].textContent = 'FEATURES';
+topHeader[1].textContent = 'ABOUT';
+topHeader[2].textContent = 'SERVICES';
+topHeader[3].textContent = 'PRODUCT';
+topHeader[4].textContent = 'VISION';
+
+
+let topParagraph = document.querySelectorAll('.text-content p')
+topParagraph[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+topParagraph[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+topParagraph[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+topParagraph[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+topParagraph[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+
+//Contact
+
+let contact = document.querySelector('.contact h4')
+contact.textContent = 'CONTACT'
+
+let contactInfo = document.querySelectorAll('.contact p')
+contactInfo[0].innerHTML= "123 Way 456 Street <br/> Somewhere, USA"
+contactInfo[1].textContent = "1 (888) 888-8888"
+contactInfo[2].textContent = "sales@greatidea.io"
+
+//Footer
+
+let footer = document.querySelector("footer p")
+footer.textContent = "Copyright Great Idea! 2018"
